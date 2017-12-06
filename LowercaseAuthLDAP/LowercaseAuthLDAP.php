@@ -1,6 +1,7 @@
 <?php
 /*	LowercaseAuthLDAP  1.0
-*	### WORKS ONLY IF /application/views/admin/user/editusers.php  is patched for accepting any active plugin containing "AuthLDAP" in name
+*	### WORKS ONLY IF /application/views/admin/user/editusers.php and /application/views/admin/user/setuserpermissions.php 
+*	are patched for accepting any active plugin containing "AuthLDAP" in name
 *	This plugin provides admin creation by fetching the specified username from the LDAP field saved in its settings and importing it with lowercase
 *	characters for both username and email 
 *	##Installation:  copy the folder in the plugin directory and set the proper permissions as you did for the rest of the web folder
