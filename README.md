@@ -1,16 +1,21 @@
 # limesurveyplugins
 plugins for limesurvey 
-/*	LowercaseAuthLDAP  1.0
-*	### WORKS ONLY IF /application/views/admin/user/editusers.php and /application/views/admin/user/setuserpermissions.php 
-*	are patched for accepting any active plugin containing "AuthLDAP" in name
+
+LowercaseAuthLDAP  1.0
+# Requirements:
+WORKS ONLY IF the two files: 
+/application/views/admin/user/editusers.php
+/application/views/admin/user/setuserpermissions.php 
+are patched for accepting any active plugin containing "AuthLDAP" in name. See commits:
 https://github.com/digitmaster/LimeSurvey/commit/ab6dec28208f3c1d925d285b32f55c704b6fa51f#diff-d6ee05c5bd57dffd97bb16dfb2d5bb69
 https://github.com/digitmaster/LimeSurvey/commit/800f8fc63484e780d39501340953eba6696281ff#diff-d6ee05c5bd57dffd97bb16dfb2d5bb69
-*	This plugin provides admin creation by fetching the specified username from the LDAP field saved in its settings and importing it with lowercase
-*	characters for both username and email 
-*	##Installation:  copy the folder in the plugin directory and set the proper permissions as you did for the rest of the web folders (e.g.: 755)
-*	##Setup: exactly as you do with AuthLDAP
-*	##Final step: deactivate the AuthLDAP plugin
-*	##NOTE:  do not worry that after adding the user the confirmation messages might now show you the username and email in lowercase because they will be 
-*	## saved lowercase in the limesurvey users' database 
-*
-*/
+# Description: 
+This plugin provides admin creation by fetching the specified username from the LDAP field saved in its settings and importing it with lowercase characters for both username and email 
+# Installation:  
+copy the folder in the plugin directory and set the proper permissions as you did for the rest of the web folders (e.g.: 755)
+# Setup: 
+exactly as you do with the native AuthLDAP
+# Final step: 
+deactivate the AuthLDAP plugin
+# NOTE:  
+do not worry that after adding the user the confirmation messages might now show you the username and email in lowercase because they will be saved lowercase in the limesurvey users' database 
