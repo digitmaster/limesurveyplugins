@@ -7,6 +7,7 @@ WORKS ONLY IF the two files:
 /application/views/admin/user/editusers.php
 /application/views/admin/user/setuserpermissions.php 
 are patched for accepting any active plugin containing "AuthLDAP" in name. See commits:
+
 [one](https://github.com/digitmaster/LimeSurvey/commit/ab6dec28208f3c1d925d285b32f55c704b6fa51f#diff-d6ee05c5bd57dffd97bb16dfb2d5bb69)
 
 [two](https://github.com/digitmaster/LimeSurvey/commit/800f8fc63484e780d39501340953eba6696281ff#diff-d6ee05c5bd57dffd97bb16dfb2d5bb69)
